@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find Your Recipe - Disunic</title>
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+      #about a {
+        color: rgb(45, 116, 247);
+        text-decoration: none;
+      }
+      #about p {
+        font-size: 15px;
+        text-align: center;
+        padding: 20px 0px 20px 0px;
+        font-weight: 700;
+        margin-top: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="name" aria-selected="off">
+        <h2 class="hh1">Find</h2>
+        <h2 class="hh2">Your</h2>
+        <h2 class="hh3">Recipe</h2>
+      </div>
+      <div class="searchbar">
+        <img src="https://disunic20.github.io/favicon.png" />
+        <input type="text" id="searchBox" autocomplete="off" />
+        <button id="search" onClick="searchRecipes">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="17"
+            height="17"
+            fill="currentColor"
+            class="bi bi-search"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+            ></path>
+          </svg>
+        </button>
+      </div>
+      <div id="about"></div>
+    </div>
+    <div style="margin-top:30px;text-align: center;margin-bottom: 100px;" class="displaySearch">
+      <!-- <figure class="results">
+        <a href="https://food52.com/recipes/67857-chicken-biryani-recipe-and-nutritional-information"target="_blank">
+            <img src="https://edamam-product-images.s3.amazonaws.com/web-img/6bf/6bf81e81a9d2e911dcac54783956baf5.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJGMEQCICQh6zVwBV3wSXYCpjlvAxp0nu0z%2FUoqgTQpA54NfWvmAiA9VWVOzlwlBtfHEkUWSYSWaiqXFFCbRTJlEzabeSwMwCrbBAj0%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDE4NzAxNzE1MDk4NiIMl1RvrLkPo1sNdIikKq8E6Fhg4fsWXAmt8SU9CMdXVGcMSyNWlafsps6UjLDtj5f8GMPDbEj%2FY7DOoUaK4HYdmh00LgxHqiMWNtOT4Ha4V5ojqeIxDKEh0Tbmzsvg%2Fe0ddkkjFTcFBvwhFfdVUsPTYFBIikI68QY80%2BBAwY4knRJ6q3Rh4GMbVhl8XU203PfZOqO%2FcpHueCHxh5t4m4bIyrpqqygMbqleEpBrPpAmr%2BMEvg0aU79E1kwURRUurOeDKBfnUEcsSWUn8Wf7ebDpFXPC04H3JyP3w4L8BE2YxQptrrWGgsN%2BaUr4T8T3MytiRfqbLaovD1JdlEPI0lyN2FC%2FdsRuI4FRYwSs4XVAtNh3Eoja4%2BSvot%2Fas3P%2FBZ%2BdBH%2B673xYoEfVEzdLe27tmOqRgj0h8Rn2WUZg8E47htiyjzKaB1fVoF2B%2FEBRIJ5xtPQDc0OAkUoCgXNsAufaqPjzxXuCvswS8nDPBMZQh9icN0CMgb%2FAuCUbYl%2FY0EcxVmF5u%2Fxv%2FDG1tJUkxahFWFtBeanJuugj3AMLBdaJGzuYTOUoAqe8NIFCFrRk8qisVDboWXjYSQo1mdbyIiYn0MSItCrL5cLomBlsUhzye9OMhEFW5oR3bKCFXfeiRIiS3ZgKrJooez4KaXCqIL21Hz70zZqks8ly6utDTY7DYJu8MUvyLH55r2%2FMuhEdHK8ZEf82yzgp2PZrrbC2EVnaDxPY8z3J80D9pb2Es7foOOhe8wMi%2FFkMmNaMpJ2tYzDT5oOVBjqqAbIxKbvNgObTr6xSKzZgZX%2B0Vevgf0H3cMZgNX1D%2B3X6ysT70InOXhecQ3K3Vv6yOVYMEOa1u6p8CVcNKKDEoFPIdFoTc0hQWXwEu2Ve2ojbWZYRDO8bzginWslRejp%2FLLVUckuKJDadYHFbMp5ZlMlvbgXX6hZJBrkhLxXusgjtB82%2B9%2FDPu%2FYPYm5uHsJGNhyC1b%2Fzdz7z7HpYzuTpMaG6v6HVY%2BHV1SJ5&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20220608T192054Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=3600&amp;X-Amz-Credential=ASIASXCYXIIFEE2IJ5EX%2F20220608%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Signature=8de73015b0f4f2c9dff82a8220586b428cb25e91a688b4dc2713bd71e7a671a3"alt="Chicken" biryani="" recipe="" and="" nutritional=""information"="">
+          <h4 class="results_label">Chicken Biryani Recipe and Nutritional Information</h4>
+          <h5 class="results_source">From Food52</h5></a>
+      </figure> -->
+    </div>
+    <script src="./src/javascript/index.js"></script>
+
+    <script src="https://disunic20.github.io/disunic.js"></script>
+  </body>
+</html>
